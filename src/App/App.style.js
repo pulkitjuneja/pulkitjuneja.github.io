@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const flexDiv = styled.div`
+export const FlexDiv = styled.div`
   // flex
   display: flexbox;
   display: -webkit-box;

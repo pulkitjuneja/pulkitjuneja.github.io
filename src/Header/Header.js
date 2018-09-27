@@ -1,34 +1,21 @@
 import React, { Component } from 'react';
-import styled from 'styled-components'
-
-export const titleDiv = styled.div`
-	-webkit-align-self: center;
-	-ms-flex-item-align: center;
-	align-self: center;
-	padding: 2rem;
-	background: #000;
-	height:200px;
-	width: 960px;
-	text-align: center;
-`;
-
-export const smallSeperator = styled.div`
-	background: #fff;
-	height: 2px;
-	width: 70px;
-	margin: auto;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	transform: matrix(1, 0, 0, 1, 0, 0) ;
-`
+import {TitleDiv, Name, Title, BigSeperator, SmallSeperator, IconWrapper} from './Header.style'
+import {FaGithub, FaLinkedin, FaTwitter, FaEnvelope} from 'react-icons/fa'
 
 class Header extends Component {
 	render() {
 		return (
-			<titleDiv>
-				<smallSeperator />
-				Hello
-			</titleDiv>
+			<TitleDiv>
+				<Name>Hello I'm Pulkit</Name>
+				<Title>Game Developer | Computer graphics Enthusiast</Title>
+				{/* <BigSeperator/> */}
+				<span>
+						<IconWrapper><FaGithub color="black" size="1.2em"/></IconWrapper>
+						<IconWrapper><FaLinkedin color="#2980b9" size="1.2em"/></IconWrapper>
+						<IconWrapper><FaTwitter color="#2980b9" size="1.2em"/></IconWrapper>
+						<IconWrapper><FaEnvelope color="#16a085	" size="1.2em"/></IconWrapper>
+				</span>
+			</TitleDiv>
 		);
 	}
 }

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { flexDiv } from './App.style'
+// import { FlexDiv } from './App.style'
 import Header from '../Header/Header';
 
 class App extends Component {
   render() {
     return (
-      <flexDiv>
+      <div>
         <Header />
-      </flexDiv>
+      </div>
     );
   }
 }
