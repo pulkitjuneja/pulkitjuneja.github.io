@@ -1,4 +1,5 @@
-import styled, {css} from 'styled-components'
+import styled, { css } from 'styled-components'
+import { Container } from '../Common/Common.style'
 
 const textMain = css`
 	color: #2c3e50
@@ -8,11 +9,10 @@ export const IconWrapper = styled.span`
 	padding-left:20px;
 `
 
-export const TitleDiv = styled.div`
+export const TitleDiv = styled(Container)`
 	-webkit-align-self: center;
 	-ms-flex-item-align: center;
 	align-self: center;
-	padding: 1em;
 	background: #bdc3c7;
 	height:100%;
 	text-align: center;
