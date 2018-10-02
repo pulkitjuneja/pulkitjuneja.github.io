@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, HeaderUnderScore, CenterAlignedHeading } from '../Common/Common.style'
+import { Container, CenterAlignedHeading } from '../Common/Common.style'
 import TeaserCard from '../TeaserCard/TeaserCard';
 
 class Projects extends Component {
@@ -7,13 +7,17 @@ class Projects extends Component {
     return (
       <Container>
         <CenterAlignedHeading>Projects and Experiments </CenterAlignedHeading>
-        <HeaderUnderScore />
         <div className='container'>
-          <div className='row'>
-            <TeaserCard title="test" description="test description" imageUrl="https://i.imgur.com/qbb4bgk.gif" />
+          <div className="row">
+            <div className="col-lg">
+              <TeaserCard title="Magnetic" description="Magnetic" imageURL="/Magnetic.png" />
+            </div>
+            <div className="col-lg">
+              <TeaserCard title="test" description="test description" imageURL="/MeshDeform.png" />
+            </div>
           </div>
         </div>
-      </Container>
+      </Container >
     );
   }
 }

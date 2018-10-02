@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-import {
-  TeaserContainer, TeaserImage,
-  TeaserCaption, TeaserMeta,
-  TeaserTitle, TeaserDescription
-} from './TeaserCard.style'
 import propTypes from 'prop-types'
+import './TeaserCard.css'
 
 class TeaserCard extends Component {
   render() {
@@ -12,15 +8,20 @@ class TeaserCard extends Component {
     const { imageURL, title, description } = this.props;
 
     return (
-      <TeaserContainer>
-        <TeaserImage src="https://i.imgur.com/qbb4bgk.gif" />
-        <TeaserCaption>
-          <TeaserMeta>
-            <TeaserTitle>{title}</TeaserTitle>
-            <TeaserDescription>{description}</TeaserDescription>
-          </TeaserMeta>
-        </TeaserCaption>
-      </TeaserContainer>
+      <div className="teaserContainer">
+        <div className="content">
+          <a href="https://unsplash.com/photos/HkTMcmlMOUQ">
+            <div className="content-overlay"></div>
+            <div className="imageContainer">
+              <img className="content-image" src={imageURL} />
+            </div>
+            <div className="content-details fadeIn-bottom">
+              <h3 className="content-title">{title}</h3>
+            </div>
+          </a>
+        </div>
+        <p>{description}</p>
+      </div >
     );
   }
 }
