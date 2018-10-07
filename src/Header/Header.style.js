@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 import { Container } from '../Common/Common.style'
 
 const textMain = css`
-	color: #2c3e50
+	color: #2c3e50;
 `
 
 export const IconWrapper = styled.span`
@@ -32,7 +32,7 @@ export const BigSeperator = styled(SmallSeperator)`
  width: 50%;
 `
 
-export const Name = styled.h2`
+export const Name = styled.h1`
 	${textMain}
 `
 

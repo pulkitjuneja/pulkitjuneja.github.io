@@ -1,23 +1,39 @@
 import React, { Component } from 'react';
-import { Container, CenterAlignedHeading } from '../Common/Common.style'
+import {CenterAlignedHeading } from '../Common/Common.style'
+import {ProjectContainer} from './Projects.style'
 import TeaserCard from '../TeaserCard/TeaserCard';
+import projectData from '../Constants/projectData.js'
 
 class Projects extends Component {
   render() {
     return (
-      <Container>
+      <ProjectContainer>
         <CenterAlignedHeading>Projects and Experiments </CenterAlignedHeading>
         <div className='container'>
           <div className="row">
-            <div className="col-lg">
-              <TeaserCard title="Magnetic" description="Magnetic" imageURL="/Magnetic.png" />
+            <div className="col-sm">
+              <TeaserCard cardData={projectData.magnetic}/>
             </div>
-            <div className="col-lg">
-              <TeaserCard title="test" description="test description" imageURL="/MeshDeform.png" />
+            <div className="col-sm">
+              <TeaserCard cardData={projectData.neonShifter} />
+            </div>
+            <div className="col-sm">
+              <TeaserCard cardData={projectData.meshDeformation} />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm">
+                <TeaserCard cardData={projectData.rays} />
+            </div>
+            <div className="col-sm">
+                <TeaserCard cardData={projectData.eva} />
+            </div>
+            <div className="col-sm">
+                <TeaserCard cardData={projectData.raysCaster} />
             </div>
           </div>
         </div>
-      </Container >
+      </ProjectContainer >
     );
   }
 }

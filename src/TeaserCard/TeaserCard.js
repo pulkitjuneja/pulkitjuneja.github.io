@@ -5,31 +5,33 @@ import './TeaserCard.css'
 class TeaserCard extends Component {
   render() {
 
-    const { imageURL, title, description } = this.props;
+    const { imageURL, title, link } = this.props.cardData;
 
     return (
       <div className="teaserContainer">
         <div className="content">
-          <a href="https://unsplash.com/photos/HkTMcmlMOUQ">
+          <a href={link}>
             <div className="content-overlay"></div>
             <div className="imageContainer">
               <img className="content-image" src={imageURL} />
             </div>
             <div className="content-details fadeIn-bottom">
-              <h3 className="content-title">{title}</h3>
+              <h5 className="content-title">{title}</h5>
             </div>
           </a>
         </div>
-        <p>{description}</p>
       </div >
     );
   }
 }
 
 TeaserCard.propTypes = {
-  imageURL: propTypes.string,
-  title: propTypes.string,
-  description: propTypes.string
+  cardData : propTypes.shape({
+    title: propTypes.string,
+    imageURL: propTypes.string,
+    description: propTypes.string,
+    link: propTypes.string
+  })
 }
 
 export default TeaserCard;

@@ -12,3 +12,7 @@ export const CenterAlignedHeading = styled.h2`
   text-align:center;
 `
 
+export const theme = {
+  fontSize:10
+}
+

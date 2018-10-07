@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa'
 class Header extends Component {
     render() {
         return (
-            <TitleDiv>
+            <TitleDiv className="section">
                 <Name>Hello I'm Pulkit</Name>
                 <Title>Game Developer | Computer graphics Enthusiast</Title>
                 {/* <BigSeperator/> */}
