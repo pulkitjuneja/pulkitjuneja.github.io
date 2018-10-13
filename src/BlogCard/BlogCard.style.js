@@ -12,6 +12,7 @@ export const Date = styled.p`
 `
 
 export const Description = styled.p`
+  font-size:14px
 `
 
 export const Title = styled.p`

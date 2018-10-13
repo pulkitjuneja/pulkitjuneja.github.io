@@ -5,14 +5,10 @@ export const HeaderUnderScore = styled.hr`
 `
 
 export const Container = styled.div`
-  padding:2em;
+  padding:10%;
 `;
 
-export const CenterAlignedHeading = styled.h2`
-  text-align:center;
+export const CenterAlignedHeading = styled.h3`
+   text-align:center;
+   margin-bottom:1em;
 `
-
-export const theme = {
-  fontSize:10
-}
-

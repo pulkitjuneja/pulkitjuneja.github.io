@@ -5,6 +5,7 @@ import ReactFullpage from '@fullpage/react-fullpage'
 import Header from '../Header/Header';
 import Projects from '../Projects/Projects'
 import BlogSection from '../BlogSection/BlogSection'
+import About from '../About/About'
 
 
 const fullpageOptions = {
@@ -16,12 +17,12 @@ const fullpageOptions = {
     <ReactFullpage
       {...fullpageOptions}
       callbacks={["afterRender"]}
-      render={({ state, fullpageApi }) => {
-        console.log("render prop change", state, fullpageApi); // eslint-disable-line
+      render={() => {
         return (
-          <div>
+          <div style={{padding:'0px'}}>
             <Header />
             <div className="section">
+              <About/> 
               <Projects/>
               <BlogSection/>
             </div>
