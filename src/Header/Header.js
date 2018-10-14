@@ -15,7 +15,7 @@ class Header extends Component {
 						<a href="https://www.linkedin.com/in/pulkitjuneja16/"><IconWrapper><FaLinkedin color="#2980b9" size="1em" /></IconWrapper></a>
 						<a href="https://twitter.com/PulkitJuneja96"><IconWrapper><FaTwitter color="#2980b9" size="1em" /></IconWrapper></a>
 						<a href="https://github.com/pulkitjuneja/"><IconWrapper><FaEnvelope color="#16a085	" size="1em" /></IconWrapper></a>
-						<a href="/cv.pdf"><BoldSpan>CV</BoldSpan></a>
+						<a href="cv.pdf"><BoldSpan>CV</BoldSpan></a>
 					</IconsContainer>
 				</HeaderBackground>
 			</div >

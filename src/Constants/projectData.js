@@ -1,27 +1,27 @@
 export default {
   magnetic: {
     title: "Magnetic",
-    imageURL: "/Magnetic.png",
+    imageURL: "Magnetic.png",
     link: "https://github.com/pulkitjuneja/magnet"
   },
   neonShifter: {
     title: 'Neon Shifters',
-    imageURL: '/neonShifters.png',
+    imageURL: 'neonShifters.png',
     link: 'https://github.com/pulkitjuneja/NeonShifters'
   },
   meshDeformation: {
     title: 'Procedural Mesh Deformation',
-    imageURL: '/MeshDeform.png',
+    imageURL: 'MeshDeform.png',
     link: 'https://github.com/pulkitjuneja/Procedural-Mesh-Deformation-unity'
   },
   rays: {
     title: 'C++ RayTracer',
-    imageURL: '/rays.png',
+    imageURL: 'rays.png',
     link: 'https://github.com/pulkitjuneja/Rays'
   },
   eva: {
     title: 'EVA',
-    imageURL: '/Eva.gif',
+    imageURL: 'Eva.gif',
     link: 'https://github.com/pulkitjuneja/EVA-Emotion-Driven-Virtual-Agent'
   },
   raysCaster: {
