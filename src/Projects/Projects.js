@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {CenterAlignedHeading } from '../Common/Common.style'
-import {ProjectContainer} from './Projects.style'
+import { CenterAlignedHeading } from '../Common/Common.style'
+import { ProjectContainer } from './Projects.style'
 import TeaserCard from '../TeaserCard/TeaserCard';
 import projectData from '../Constants/projectData.js'
 
@@ -12,7 +12,7 @@ class Projects extends Component {
         <div className='container'>
           <div className="row">
             <div className="col-sm">
-              <TeaserCard cardData={projectData.magnetic}/>
+              <TeaserCard cardData={projectData.magnetic} />
             </div>
             <div className="col-sm">
               <TeaserCard cardData={projectData.neonShifter} />
@@ -23,13 +23,21 @@ class Projects extends Component {
           </div>
           <div className="row">
             <div className="col-sm">
-                <TeaserCard cardData={projectData.rays} />
+              <TeaserCard cardData={projectData.rays} />
             </div>
             <div className="col-sm">
-                <TeaserCard cardData={projectData.eva} />
+              <TeaserCard cardData={projectData.eva} />
             </div>
             <div className="col-sm">
-                <TeaserCard cardData={projectData.raysCaster} />
+              <TeaserCard cardData={projectData.raysCaster} />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm-4">
+              <TeaserCard cardData={projectData.insightVR} />
+            </div>
+            <div className="col-sm-4">
+              <TeaserCard cardData={projectData.rpb} />
             </div>
           </div>
         </div>

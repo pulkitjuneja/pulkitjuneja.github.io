@@ -34,9 +34,24 @@ export const BigSeperator = styled(SmallSeperator)`
 
 export const Name = styled.h1`
 	${textMain}
+	text-align:center;
 	padding-left:1em;
 `
 
 export const Title = styled.h6`
 	${textMain}
+	text-align:center;
+`
+
+export const IconsContainer = styled.span`
+	margin:auto;
+	display: inline-block;
+`
+
+export const BoldSpan = styled.span`
+	margin:auto;
+	padding-left:20px;
+	display: inline-block;
+	font-weight:1000;
+	color: #ED4C67
 `

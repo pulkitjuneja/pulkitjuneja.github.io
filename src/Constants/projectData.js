@@ -1,13 +1,13 @@
 export default {
   magnetic: {
-    title:"Magnetic",
-    imageURL:"/Magnetic.png",
-    link:"https://github.com/pulkitjuneja/magnet"
+    title: "Magnetic",
+    imageURL: "/Magnetic.png",
+    link: "https://github.com/pulkitjuneja/magnet"
   },
   neonShifter: {
     title: 'Neon Shifters',
     imageURL: '/neonShifters.png',
-    link:'https://github.com/pulkitjuneja/NeonShifters'
+    link: 'https://github.com/pulkitjuneja/NeonShifters'
   },
   meshDeformation: {
     title: 'Procedural Mesh Deformation',
@@ -28,5 +28,15 @@ export default {
     title: 'Pseudo 3D renderer',
     imageURL: 'rays-caster.gif',
     link: 'https://github.com/pulkitjuneja/Rays-Caster'
+  },
+  insightVR: {
+    title: 'InsightVR',
+    imageURL: 'insightVR.gif',
+    link: 'https://gitlab.com/InsightVR/InsightVR-Cardboardr'
+  },
+  rpb: {
+    title: 'React Particle Background banner',
+    imageURL: 'rpb.gif',
+    link: 'https://github.com/pulkitjuneja/React-Full-screen-Particle-Banner'
   }
 }

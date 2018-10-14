@@ -13,23 +13,33 @@ const fullpageOptions = {
 };
 
 
-  const App = () => (
-    <ReactFullpage
-      {...fullpageOptions}
-      callbacks={["afterRender"]}
-      render={() => {
-        return (
-          <div style={{padding:'0px'}}>
-            <Header />
-            <div className="section">
-              <About/> 
-              <Projects/>
-              <BlogSection/>
-            </div>
-          </div>
-        );
-      }}
-    />
-  );
+// const App = () => (
+//   <ReactFullpage
+//     {...fullpageOptions}
+//     callbacks={["afterRender"]}
+//     render={() => {
+//       return (
+//         <div style={{padding:'0px'}}>
+//           <Header />
+//           <div className="section">
+//             <About/> 
+//             <Projects/>
+//             <BlogSection/>
+//           </div>
+//         </div>
+//       );
+//     }}
+//   />
+// );
+
+const App = () => (
+  <div>
+    {console.log(window.inn)}
+    <Header />
+    <About />
+    <Projects />
+    <BlogSection />
+  </div>
+)
 
 export default App;

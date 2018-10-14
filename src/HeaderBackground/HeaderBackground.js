@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import * as THREE from 'three';
 import propTypes from 'prop-types'
-import {BackgroundContainer, Base, Overlay} from './HeaderBackground.style'
+import { BackgroundContainer, Overlay } from './HeaderBackground.style'
 
 class HeaderBackground extends Component {
 
@@ -12,8 +12,8 @@ class HeaderBackground extends Component {
 
   render() {
     return (
-      <BackgroundContainer>
-        <Base innerRef={(container)=>{this.container = container}} />
+      <BackgroundContainer innerRef={(container) => { this.container = container }}>
+        <div ref={(canvas) => { this.canvas = canvas }} />
         <Overlay>
           {this.props.children}
         </Overlay>
@@ -21,10 +21,10 @@ class HeaderBackground extends Component {
     );
   }
 
-  initParticles () {
+  initParticles() {
     this.scene = new THREE.Scene();
 
-    this.camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 1, 1000);
+    this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
     this.camera.position.z = 500;
 
     this.material = new THREE.PointsMaterial({
@@ -49,15 +49,15 @@ class HeaderBackground extends Component {
     this.points = new THREE.Points(this.particles, this.material);
     this.points.sortParticles = true;
     this.scene.add(this.points);
-  
+
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.renderer.setClearColor('#333', 1);
-    this.container.appendChild(this.renderer.domElement);
+    this.canvas.appendChild(this.renderer.domElement);
     this.registerWindowResize();
   }
 
-  registerWindowResize () {
+  registerWindowResize() {
     const currentInstance = this
     this.onWindowResize = () => {
       currentInstance.camera.aspect = window.innerWidth / window.innerHeight;
@@ -67,7 +67,7 @@ class HeaderBackground extends Component {
     window.addEventListener('resize', this.onWindowResize, false);
   }
 
-  startAnimation () {
+  startAnimation() {
     const currentInstance = this;
     const xSpeed = 0.0005;
     const ySpeed = 0.001;
@@ -77,32 +77,32 @@ class HeaderBackground extends Component {
       currentInstance.scene.rotation.y += xSpeed;
 
       var i = currentInstance.particleCount;
-      while(i--){
+      while (i--) {
         var particle = currentInstance.particles.vertices[i];
-    
+
         // y
-        if(particle.y > 1000){
+        if (particle.y > 1000) {
           particle.y = -1000;
           particle.velocity.y = Math.random();
         }
         particle.velocity.y += Math.random() * ySpeed;
-    
+
         particle.add(particle.velocity);
       }
       currentInstance.points.geometry.verticesNeedUpdate = true;
-    
+
       currentInstance.renderParticles();
     }
     this.update();
   }
 
-  renderParticles () {
-    this.renderer.render(this.scene,this.camera)
+  renderParticles() {
+    this.renderer.render(this.scene, this.camera)
   }
 }
 
 HeaderBackground.propTypes = {
-  children: propTypes.object
+  children: propTypes.array
 }
 
 export default HeaderBackground;
