@@ -32,7 +32,7 @@ export default {
   insightVR: {
     title: 'InsightVR',
     imageURL: 'insightVR.gif',
-    link: 'https://gitlab.com/InsightVR/InsightVR-Cardboardr'
+    link: 'https://gitlab.com/InsightVR/InsightVR-Cardboard'
   },
   rpb: {
     title: 'React Particle Background banner',
@@ -43,5 +43,10 @@ export default {
     title: 'Markerless WebAR',
     imageURL: 'mar.gif',
     link: 'https://github.com/pulkitjuneja/AR-hoops'
+  },
+  glParticles: {
+    title: 'glCore',
+    imageURL: 'particles.gif',
+    link: 'https://github.com/pulkitjuneja/GlCore'
   }
 }

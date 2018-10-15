@@ -39,6 +39,14 @@ class Projects extends Component {
             <div className="col-sm-4">
               <TeaserCard cardData={projectData.rpb} />
             </div>
+            <div className="col-sm-4">
+              <TeaserCard cardData={projectData.glParticles} />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm-4">
+              <TeaserCard cardData={projectData.glParticles} />
+            </div>
           </div>
         </div>
       </ProjectContainer >
