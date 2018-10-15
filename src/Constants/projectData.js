@@ -38,5 +38,10 @@ export default {
     title: 'React Particle Background banner',
     imageURL: 'rpb.gif',
     link: 'https://github.com/pulkitjuneja/React-Full-screen-Particle-Banner'
+  },
+  markerlessWebAR: {
+    title: 'Markerless WebAR',
+    imageURL: 'mar.gif',
+    link: 'https://github.com/pulkitjuneja/AR-hoops'
   }
 }
