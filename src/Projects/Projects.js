@@ -40,7 +40,7 @@ class Projects extends Component {
               <TeaserCard cardData={projectData.rpb} />
             </div>
             <div className="col-sm-4">
-              <TeaserCard cardData={projectData.glParticles} />
+              <TeaserCard cardData={projectData.markerlessWebAR} />
             </div>
           </div>
           <div className="row">
